@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="notofication_color">#008577</color>
+    <color name="password_warning">#B72222</color>
+
+    <color name="list_view_background">#E3E3E3</color> <!--  리스트 아이템 백그라운드 색  -->
+    <color name="item_view_background">#FAFAFA</color> <!--  리스트 아이템 백그라운드 색  -->
+    <color name="date">#C1C1C1</color> <!--  날짜 텍스트 색  -->
+    <color name="separator">#DEDEDE</color> <!--  구분선 색  -->
+    <color name="content_text">#585858</color> <!--  컨텐트 텍스트 색  -->
+    <color name="content_detail_background">#F7F7F7</color> <!--  디테일 백그라운드 색  -->
+    <color name="inquery_answered">#BA0000</color> <!--  문의사항 답변완료 색  -->
+    <color name="inquery_unanswered">#304786</color> <!--  문의사항 답변 마완료 색  -->
+
+    <color name="action_bar_background">#ffffff</color> <!--  액션바 백그라운드 색  -->
+    <color name="action_bar_separator">#E8E8E8</color> <!--  액션바 하단 구분선 색  -->
+    <color name="action_bar_title">#000000</color> <!--  액션바 하단 구분선 색  -->
+
+    <color name="hint_color">#CECECE</color> <!--  TextEdit의 힌트 색  -->
+
+    <color name="inquery_answer_text">#FFFFFF</color> <!--  문의하기 디테일의 대답 글자 색 -->
+    <color name="inquery_answer_background">#245BCD</color> <!--  문의하기 디테일의 대답 백그라운드 색 -->
+
+    <color name="auth_description_title">#000000</color> <!--  authentication 관련 화면의 상단 제목 글자 색 -->
+    <color name="auth_description_subtitle">#555555</color> <!-- authentication 관련 화면의 상단 부제목 글자 색 -->
+
+    <color name="rounded_square_button_background">#304786</color>
+    <color name="auth_policy_title">#000000</color> <!-- authentication 정책사항 타이틀 -->
+
+</resources>

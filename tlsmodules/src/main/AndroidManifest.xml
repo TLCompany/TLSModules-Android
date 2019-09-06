@@ -1,2 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tlsolution.tlsmodules" />
+    package="com.tlsolution.tlsmodules">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application>
+        <activity android:name=".Policy.PolicyDetailActivity"></activity>
+        <activity android:name=".Policy.PolicyListActivity" />
+        <activity android:name=".Notice.NoticeDetailActivity" />
+        <activity android:name=".Notice.NoticeListActivity" />
+    </application>
+
+</manifest>

@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">TLSModules</string>
+
+    <string name="ok">확인</string>
+    <string name="cancel">취소</string>
+    <string name="unknown_error_meesage">😭 Something went wrong</string>
+
+    <string name="inquery_no_content">문의사항을 적어주세요.</string>
+    <string name="inquery_complete_question">문의사항을 보내시겠습니까?</string>
+    <string name="inquery_completed_messsage">입력해 주신 문의사항이 전달되었습니다!</string>
+
+    <string name="auth_policy_description_title">약관동의</string>
+    <string name="auth_policy_description_subtitle">필수 약관을 읽어보시고 동의를 해주세요!</string>
+
+    <string name="auth_policy_policy_agree_">동의</string>
+    <string name="auth_policy_policy_agree_all">모두 동의하기</string>
+    <string name="auth_policy_warning">모든 필수약관에 동의를 해 주세요.</string>
+    <string name="auth_verification_invalid_email">이메일 형식에 맞춰서 입력해 주세요.</string>
+    <string name="auth_verification_vcode_sent">인증번호가 보내졌습니다.</string>
+    <string name="auth_verification_vcode_empty">인증번호를 입력해 주세요.</string>
+    <string name="auth_verification_no_vcode">먼저 인증번호를 보내주세요.</string>
+    <string name="auth_verification_completed">인증이 완료되었습니다.</string>
+    <string name="auth_vcode_incorrect">입력하신 인증번호가 올바르지 않습니다.</string>
+    <string name="auth_vcode_hint">인증번호</string>
+
+    <string name="password_dont_match">비밀번호가 일치하지 않습니다.</string>
+    <string name="password_invalid">비밀번호는 영문 + 숫자를 포함한 8자리 이상입니다.</string>
+    <string name="password_subtitle">영문 + 숫자를 포함한 8자리 이상을 입력해 주세요.</string>
+    <string name="password_input1_hint">비밀번호를 입력해 주세요.</string>
+    <string name="password_input2_hint">비밀번호를 다시 한번 입력해 주세요.</string>
+    <string name="password_complete_error">비밀번호를 올바르게 입력해 주세요.</string>
 </resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Basic Section Header-->
+    <dimen name="basic_section_header_left_margin">16dp</dimen> <!--섹션 헤더의 왼쪽 margin-->
+    <dimen name="basic_section_header_right_margin">16dp</dimen> <!--섹션 헤더의 오른쪽 margin-->
+    <dimen name="basic_section_header_border_height">1dp</dimen> <!--섹션 헤더의 하단선의 높이-->
+    <dimen name="basic_section_header_shadow">5dp</dimen> <!--섹션 헤더의 그림자 높이-->
+    <dimen name="basic_section_header_border_margin">30dp</dimen> <!--섹션 헤더의 하단선 오른쪽&왼쪽 margin-->
+
+    <dimen name="navigation_bar_left_margin">15dp</dimen> <!-- 네비게이션 바의 왼쪽 뒤로가기 버튼의 margin-->
+    <dimen name="navigation_bar_right_margin">20dp</dimen> <!--오른쪽 버튼의 오른쪽 마진 margin-->
+
+    <dimen name="vrt_vertical">8dp</dimen> <!--VRT 매니져들이 다루는 화면들(공지사항, 정책사항, 문의사항등) 제목 상/하 margin-->
+    <dimen name="vrt_horizontal">20dp</dimen> <!--VRT 매니져들이 다루는 화면들(공지사항, 정책사항, 문의사항등) 좌/우 margin-->
+    <dimen name="action_bar_height">60dp</dimen> <!--action bar 높이-->
+
+    <dimen name="auth_vertical">20dp</dimen> <!--Authentication의 상단과 하단의 마진-->
+    <dimen name="auth_horizontal">20dp</dimen> <!--Authentication의 좌우의 마진-->
+    <dimen name="auth_component_height">44dp</dimen> <!--Button과 TextEdit의 static height-->
+    <dimen name="auth_complete_button_top">32dp</dimen> <!--화면 맨 아래의 완료형식의 버튼이 가지는 상단 마진-->
+
+</resources>
