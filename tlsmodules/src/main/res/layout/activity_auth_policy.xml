@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Authentication.AuthPolicyActivity">
+
+    <include
+        android:id="@+id/authPolicyActionBar"
+        layout="@layout/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/authPolicyDescription"
+        layout="@layout/view_auth_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authPolicyActionBar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:id="@+id/authPolicyRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authPolicyDescription"
+        tools:itemCount="3"
+        tools:listitem="@layout/list_item_policy_agreement" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/auth_policy_policy_agree_all"
+        android:textColor="@color/auth_policy_title"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/agreeAllButton"
+        app:layout_constraintStart_toStartOf="@+id/authPolicyRecyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/authPolicyRecyclerView" />
+
+    <Button
+        android:id="@+id/agreeAllButton"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="12dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:tint="@android:color/transparent"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/agree_checkbox"
+        android:text="@string/auth_policy_policy_agree_"
+        android:textColor="@color/auth_policy_title"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/authPolicyRecyclerView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/nextButton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_square_button"
+        android:text="다음"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/authPolicyRecyclerView"
+        app:layout_constraintStart_toStartOf="@+id/authPolicyRecyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -29,6 +29,9 @@ fun Activity.showNoActionConfirmAlert(title: String,
     builder.create().show()
 }
 
+/**
+ * 액션 이벤트가 있고 한개의 버튼만 있는 경고 팝업창
+ */
 fun Activity.showActionableConfirmAlert(title: String,
                                         message: String,
                                         confirmBtnTitle: String? = getString(R.string.ok),
@@ -44,6 +47,9 @@ fun Activity.showActionableConfirmAlert(title: String,
     builder.create().show()
 }
 
+/**
+ * 긍정과 부정의 2개의 버튼을 가지고 있고, 각 이벤트를 가지고 있는 경고 팝업 창
+ */
 fun Activity.showTwoActionableAlert(title: String,
                                     message: String,
                                     positiveTitle: String,

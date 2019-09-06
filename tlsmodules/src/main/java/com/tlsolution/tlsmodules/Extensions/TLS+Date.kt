@@ -3,6 +3,9 @@ package com.tlsolution.tlsmodules.Extensions
 import java.text.SimpleDateFormat
 import java.util.*
 
+/**
+ * Date()을 날짜형식의 문자로 보여준다.
+ */
 fun Date.formattedString(): String? {
     var calendar = Calendar.getInstance()
     calendar.time = Date()

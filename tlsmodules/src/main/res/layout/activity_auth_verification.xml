@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authentication.AuthVerificationActivity">
+
+    <EditText
+        android:id="@+id/vcodeTextEdit"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/auth_component_height"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/separator"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/sendButton"
+        app:layout_constraintStart_toStartOf="@+id/targetTextEdit"
+        app:layout_constraintTop_toBottomOf="@+id/targetTextEdit" />
+
+    <include
+        android:id="@+id/authVerificationActionBar"
+        layout="@layout/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/authVerificationDescription"
+        layout="@layout/view_auth_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authVerificationActionBar" />
+
+    <EditText
+        android:id="@+id/targetTextEdit"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/auth_component_height"
+        android:layout_marginStart="@dimen/auth_horizontal"
+        android:layout_marginTop="@dimen/auth_vertical"
+        android:layout_marginEnd="@dimen/auth_horizontal"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/separator"
+        app:layout_constraintEnd_toStartOf="@+id/sendButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authVerificationDescription" />
+
+    <Button
+        android:id="@+id/sendButton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/auth_component_height"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/rounded_square_button"
+        android:text="보내기"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/targetTextEdit"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/verifyButton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/auth_component_height"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_square_button"
+        android:text="인증"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/vcodeTextEdit"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/vcodeTextEdit"
+        app:layout_constraintTop_toBottomOf="@+id/vcodeTextEdit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
