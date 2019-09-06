@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inquery.InqueryDetailActivity">
+
+    <include
+        android:id="@+id/inqueryDetailActionBar"
+        layout="@layout/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inqueryDetailActionBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/vrt_horizontal"
+                android:layout_marginTop="@dimen/vrt_vertical"
+                android:layout_marginRight="@dimen/vrt_horizontal"
+                android:text="0000.00.00"
+                android:textColor="@color/date"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/contentTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/vrt_horizontal"
+                android:layout_marginTop="@dimen/vrt_vertical"
+                android:layout_marginRight="@dimen/vrt_horizontal"
+                android:text="나의 문의사항을 보여줍니다."
+                android:textColor="@color/content_text"
+                android:textSize="13sp"/>
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/vrt_horizontal"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="@dimen/vrt_horizontal"
+                android:layout_marginBottom="8dp"
+                android:background="@color/separator" />
+
+            <TextView
+                android:id="@+id/answerTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/vrt_horizontal"
+                android:layout_marginEnd="@dimen/vrt_horizontal"
+                android:layout_marginBottom="@dimen/vrt_vertical"
+                android:ems="10"
+                android:padding="8dp"
+                android:textColor="@color/inquery_answer_text"
+                android:background="@drawable/inquery_answer_background"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

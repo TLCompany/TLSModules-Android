@@ -5,7 +5,10 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application>
-        <activity android:name=".Policy.PolicyDetailActivity"></activity>
+        <activity android:name=".Inquery.NewInqueryActivity"></activity>
+        <activity android:name=".Inquery.InqueryDetailActivity" />
+        <activity android:name=".Inquery.InqueryListActivity" />
+        <activity android:name=".Policy.PolicyDetailActivity" />
         <activity android:name=".Policy.PolicyListActivity" />
         <activity android:name=".Notice.NoticeDetailActivity" />
         <activity android:name=".Notice.NoticeListActivity" />
