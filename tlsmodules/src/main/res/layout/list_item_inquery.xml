@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="51dp"
     android:background="@color/item_view_background">
+
     <TextView
         android:id="@+id/actionBarTitleTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="@dimen/vrt_horizontal"
+        android:layout_marginRight="@dimen/vrt_horizontal"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         android:maxLines="1"
         android:text="This is where the title of an inquery shows."
         android:textColor="#000000"
@@ -46,7 +47,7 @@
         android:id="@+id/answerTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="12dp"
+        android:layout_marginEnd="@dimen/vrt_horizontal"
         android:text="답변완료"
         android:textColor="@color/inquery_answered"
         android:textSize="13sp"

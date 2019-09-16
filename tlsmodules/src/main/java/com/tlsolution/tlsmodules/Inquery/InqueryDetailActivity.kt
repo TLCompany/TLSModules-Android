@@ -22,8 +22,8 @@ class InqueryDetailActivity : TLSActivity() {
         dateTextView.setText(inquery.date.formattedString())
         contentTextView.setText(inquery.content)
         if (inquery.isAnswered) {
-            answerTextView.visibility = View.VISIBLE
             separator.visibility = View.VISIBLE
+            answerTextView.visibility = View.VISIBLE
             answerTextView.setText(inquery.answer)
         } else {
             answerTextView.visibility = View.INVISIBLE

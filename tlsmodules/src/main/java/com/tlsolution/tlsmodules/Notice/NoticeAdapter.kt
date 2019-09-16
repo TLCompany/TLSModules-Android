@@ -39,7 +39,7 @@ class NoticeAdapter(): RecyclerView.Adapter<NoticeViewHolder>() {
     override fun onBindViewHolder(p0: NoticeViewHolder, p1: Int) {
         val itemView = p0.itemView
         val notice = notices.get(p1)
-        itemView.titleTextView.setText(notice.date.formattedString())
+        itemView.dateTextView.setText(notice.date.formattedString())
         itemView.titleTextView.setText(notice.title)
         p0.notice = notice
     }
