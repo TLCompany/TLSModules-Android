@@ -3,7 +3,7 @@ package com.tlsolution.tlsmodules.Network
 
 import android.util.Log
 import com.google.gson.GsonBuilder
-import com.tlsolution.tlsmodules.UserManager.User
+import com.tlsolution.tlsmodules.UserManagement.User
 import okhttp3.*
 import java.io.IOException
 

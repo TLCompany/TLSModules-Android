@@ -1,7 +1,8 @@
 package com.tlsolution.tlsmodules.Extensions
 
-import com.tlsolution.tlsmodules.Policy.Policy
+import com.tlsolution.tlsmodules.Models.Policy
 
+@Deprecated(message = "View-related classes are no longer supoported.")
 fun ArrayList<Policy>.sortedOnes(): ArrayList<Policy> {
 
     var ones = this.sortedWith(Comparator({ p1, p2 ->
@@ -15,6 +16,7 @@ fun ArrayList<Policy>.sortedOnes(): ArrayList<Policy> {
     return ArrayList(ones)
 }
 
+@Deprecated(message = "View-related classes are no longer supoported.")
 fun ArrayList<Policy>.mandatoryCounts(): Int {
     var count = 0
     this.forEach {

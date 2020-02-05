@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/list_view_background"
-    tools:context=".Policy.PolicyListActivity">
+    tools:context=".Deprecated.PolicyListActivity">
 
     <include
         android:id="@+id/policyListActionBar"

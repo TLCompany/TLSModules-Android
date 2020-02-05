@@ -5,16 +5,16 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application>
-        <activity android:name=".Authentication.PasswordActivity"></activity>
-        <activity android:name=".Authentication.AuthVerificationActivity" />
-        <activity android:name=".Authentication.AuthPolicyActivity" />
-        <activity android:name=".Inquery.NewInqueryActivity" />
-        <activity android:name=".Inquery.InqueryDetailActivity" />
-        <activity android:name=".Inquery.InqueryListActivity" />
-        <activity android:name=".Policy.PolicyDetailActivity" />
-        <activity android:name=".Policy.PolicyListActivity" />
-        <activity android:name=".Notice.NoticeDetailActivity" />
-        <activity android:name=".Notice.NoticeListActivity" />
+        <activity android:name=".Deprecated.PasswordActivity"></activity>
+        <activity android:name=".Deprecated.AuthVerificationActivity" />
+        <activity android:name=".Deprecated.AuthPolicyActivity" />
+        <activity android:name=".Deprecated.NewInqueryActivity" />
+        <activity android:name=".Deprecated.InqueryDetailActivity" />
+        <activity android:name=".Deprecated.InqueryListActivity" />
+        <activity android:name=".Deprecated.PolicyDetailActivity" />
+        <activity android:name=".Deprecated.PolicyListActivity" />
+        <activity android:name=".Deprecated.NoticeDetailActivity" />
+        <activity android:name=".Deprecated.NoticeListActivity" />
     </application>
 
 </manifest>
