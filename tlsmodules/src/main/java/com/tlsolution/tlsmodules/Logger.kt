@@ -9,8 +9,8 @@ class Logger {
             Log.d(tag, type.message(target))
         }
 
-        fun showDebuggingMessage(tag: String, message: String) {
-            Log.d(tag, message)
+        fun showDebuggingMessage(tag: String, message: String?) {
+            Log.d(tag, message ?: "")
         }
     }
 }
