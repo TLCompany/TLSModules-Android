@@ -146,8 +146,8 @@ class RequestManager(val rootActivity: Activity) {
     private fun renewToken(r: Request, c: User?, cb: ((RequestResult?) -> Unit)) {
 
         val secretKey = c?.clientSecret
-        val body = RequestBody("{\"Data\" : {\"clientSecretKey\":\"$secretKey\"}}")
-        val requestBuilder = okhttp3.Request.Builder().method("POST", body).url(r.baseURL + "/v1/token")
+        val body = RequestBody("{\"Data\" : {\"clientSecretKey\":\"$secretKey\", \"type\":\"${c?.type}\"}}")
+        val requestBuilder = okhttp3.Request.Builder().method("POST", body).url(r.tokenURL)
         val request = requestBuilder.build()
         val client = OkHttpClient()
 

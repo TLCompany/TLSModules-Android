@@ -8,4 +8,5 @@ interface User {
     var clientSecret: String?
     var token: String?
     var json: String?
+    var type: Int?
 }
